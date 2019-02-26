@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+
+        <Spinner
+            android:id="@+id/registrationSpinnerId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"></Spinner>
+
+        <EditText
+            android:id="@+id/registrationNameId"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Enter Name.."
+            android:paddingLeft="10dp"
+            android:background="@drawable/rounded_corner"
+            android:textColorHint="@color/colorText"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registrationSpinnerId"
+            app:layout_constraintVertical_bias="0.047"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <EditText
+            android:id="@+id/registrationEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/rounded_corner"
+            android:textColorHint="@color/colorText"
+            android:layout_marginTop="8dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="8dp"
+            android:hint="Enter Email Id.."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registrationNameId"
+            app:layout_constraintVertical_bias="0.027"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/registrationPasswordId"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_corner"
+            android:textColorHint="@color/colorText"
+            android:hint="Enter Password.."
+            android:paddingLeft="10dp"
+            android:inputType="textVisiblePassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registrationEmailId"
+            app:layout_constraintVertical_bias="0.031"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/registrationMobileId"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corner"
+            android:textColorHint="@color/colorText"
+            android:layout_marginBottom="8dp"
+            android:hint="Enter Mobile No. .."
+            android:inputType="phone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registrationPasswordId"
+            app:layout_constraintVertical_bias="0.04"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/registrationAddressId"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:layout_height="82dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Enter Address..."
+            android:background="@drawable/rounded_corner"
+            android:textColorHint="@color/colorText"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registrationMobileId"
+            app:layout_constraintVertical_bias="0.044"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/registrationCompanyCodeId"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="10dp"
+            android:inputType="text"
+            android:background="@drawable/rounded_corner"
+            android:textColorHint="@color/colorText"
+            android:hint="Enter Company Code .."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registrationAddressId"
+            app:layout_constraintVertical_bias="0.06"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <Button
+            android:id="@+id/registrationSubmitId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/colorText"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="OnRegisterButtonClick"
+            android:text="submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registrationCompanyCodeId"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

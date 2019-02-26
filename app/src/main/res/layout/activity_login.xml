@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="10dp"
+    android:layout_margin="10dp"
+    android:layout_marginLeft="10dp"
+    tools:context=".LoginActivity">
+
+
+
+
+        <Button
+            android:id="@+id/loginLoggedInId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="140dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="346dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/rounded_button"
+            android:onClick="OnLoginButtonClick"
+            android:text="Login"
+            android:textColor="@color/colorText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.644"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/registrationForgotPasswordId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="290dp"
+            android:text="Forgot Password?"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.034"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.521"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/loginPasswordId"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="Enter Password.."
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.455"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/loginEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="Enter Email Id.."
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.338"
+            tools:layout_editor_absoluteX="5dp" />
+
+        <Spinner
+            android:id="@+id/loginSpinnerId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="135dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:tooltipText="@android:string/selectTextMode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.228"
+            tools:layout_editor_absoluteX="4dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="159dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="159dp"
+            android:background="@drawable/ic_person_outline"
+            app:layout_constraintBottom_toTopOf="@+id/loginSpinnerId"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/registrationRegisterId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginLoggedInId"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="153dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="153dp"
+            android:onClick="OnRegisterTextClick"
+            android:text="Register"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.71"
+            tools:ignore="MissingConstraints" />
+
+</android.widget.RelativeLayout>
